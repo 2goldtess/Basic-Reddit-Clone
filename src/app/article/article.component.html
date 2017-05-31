@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-4">
+        <div class="well">
+            <div id="voteCard">
+                <p id="points">{{ votes }}</p>
+                <p>Points</p>
+            </div>
+        </div>
+    </div>
+    <!--col-md-4-->
+
+    <div class="col-md-8">
+        <h2><a href="{{ link }}">{{ title }}</a></h2>
+        <p><small>{{ link }}</small></p>
+        <div class="row">
+            <div class="col-md-4 voting"><a href (click)="voteUp()"><i class="glyphicon glyphicon-arrow-up"></i> upvote</a></div>
+            <div class="col-md-4 voting"><a href (click)="voteDown()"><i class="glyphicon glyphicon-arrow-down"></i> downvote</a></div>
+        </div>
+        <!--row-->
+    </div>
+    <!--col-md-8-->
+</div>
+<!--row-->
