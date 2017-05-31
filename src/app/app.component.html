@@ -20,9 +20,6 @@
     </div>
     <!--row 1-->
 
-    <app-article></app-article>
-
-
-
+    <app-article *ngFor="let article of sortedArticles()" [article]="article"></app-article>
 </div>
 <!--main container -->

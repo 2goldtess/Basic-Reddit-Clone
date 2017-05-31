@@ -11,7 +11,7 @@
 
     <div class="col-md-8">
         <h2><a href="{{ article.link }}">{{ article.title }}</a></h2>
-        <p><small>{{ article.link }}</small></p>
+        <p><small>{{ article.domain() }}</small></p>
         <div class="row">
             <div class="col-md-4 voting"><a href (click)="voteUp()"><i class="glyphicon glyphicon-arrow-up"></i> upvote</a></div>
             <div class="col-md-4 voting"><a href (click)="voteDown()"><i class="glyphicon glyphicon-arrow-down"></i> downvote</a></div>

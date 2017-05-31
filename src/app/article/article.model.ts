@@ -4,6 +4,7 @@ This page contains a data structure that represents a single article
 
 */
 
+
 export class Article {
     title: string;
     link: string;
@@ -14,7 +15,6 @@ export class Article {
         this.link = link;
         this.votes = votes || 0;
     }
-
 
    voteUp()  {
      this.votes += 1;
